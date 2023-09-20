@@ -22,14 +22,14 @@ app.get('/tico', (req, res) => {
     res.send('Teco')
 })
 
-/*app.get('/pokemons', (req, res) => {
+app.get('/pokemons', (req, res) => {
     console.log("Just got a request!")
     const pokemons = [ 'Caterpie', 'Pidgeotto', 'Bulbasaur', 'Charmander', 'Squirtle', 'Krabby', 'Muk', 
     'Tauros ', 'Mr. Mime', 'Raticate' ];
     res.json(pokemons)
 })
 
-app.post('/series', (req, res) => {
+/*app.post('/series', (req, res) => {
     console.log("Just got a request!")
     const meusSeriados = ["The Witcher", "A Roda do Tempo", "Dark"];
     res.json({ series: meusSeriados });
