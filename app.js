@@ -12,6 +12,29 @@ app.get('/req', (req, res) => {
     res.send('Yo!')
 })
 
+app.get('/meunome', (req, res) => {
+    console.log("Just got a request!")
+    res.send('Meu nome é Lucas Monteiro da Silva')
+})
+
+/*app.get('/tico', (req, res) => {
+    console.log("Just got a request!")
+    res.send('Teco')
+})
+
+app.get('/pokemons', (req, res) => {
+    console.log("Just got a request!")
+    const pokemons = [ 'Caterpie', 'Pidgeotto', 'Bulbasaur', 'Charmander', 'Squirtle', 'Krabby', 'Muk', 
+    'Tauros ', 'Mr. Mime', 'Raticate' ];
+    res.json(pokemons)
+})
+
+app.post('/series', (req, res) => {
+    console.log("Just got a request!")
+    const meusSeriados = ["The Witcher", "A Roda do Tempo", "Dark"];
+    res.json({ series: meusSeriados });
+})*/
+
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
 
