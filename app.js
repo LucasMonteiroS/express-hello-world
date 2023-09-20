@@ -17,12 +17,12 @@ app.get('/meunome', (req, res) => {
     res.send('Meu nome é Lucas Monteiro da Silva')
 })
 
-/*app.get('/tico', (req, res) => {
+app.get('/tico', (req, res) => {
     console.log("Just got a request!")
     res.send('Teco')
 })
 
-app.get('/pokemons', (req, res) => {
+/*app.get('/pokemons', (req, res) => {
     console.log("Just got a request!")
     const pokemons = [ 'Caterpie', 'Pidgeotto', 'Bulbasaur', 'Charmander', 'Squirtle', 'Krabby', 'Muk', 
     'Tauros ', 'Mr. Mime', 'Raticate' ];
