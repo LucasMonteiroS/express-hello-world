@@ -1,7 +1,6 @@
 const express = require("express");
-const app = express();
-const port = process.env.PORT || 3001;
 
+const app = express();
 app.use(express.json())
 app.use(express.urlencoded({extended: true}));
 
@@ -11,6 +10,12 @@ app.get('/req', (req, res) => {
     console.log("Just got a request!")
     res.send('Yo!')
 })
+
+app.get('/hello', (req, res) => {
+  res.status(200).json({
+    message: "Hello World!"
+  });
+});
 
 app.get('/meunome', (req, res) => {
     console.log("Just got a request!")
@@ -35,8 +40,7 @@ app.post('/series', (req, res) => {
     res.json({ series: meusSeriados });
 })
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`));
-
+module.exports = { app };
 
 const html = `
 <!DOCTYPE html>
